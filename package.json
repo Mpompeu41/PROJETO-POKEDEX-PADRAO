@@ -1,0 +1,27 @@
+{
+  "name": "pokedex-node",
+  "version": "1.0.0",
+  "description": "Projeto 02 modulo-02",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mpompeu41/POKEDEX-Node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mpompeu41/POKEDEX-Node/issues"
+  },
+  "homepage": "https://github.com/Mpompeu41/POKEDEX-Node#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

@@ -1,1 +1,2 @@
-# PROJETO-POKEDEX-PADRAO
+# POKEDEX-Node
+Projeto 02 modulo-02
