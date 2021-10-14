@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Pokédex</title>
+    </head>
+    
+    <body>
+        <!-- Área de MENU -->
+        <nav>
+            <article>
+                <img src="/img/Pokedex.gif" class="img-fluid gif" alt="Pokedex com o pikachu">
+                <h1><a href="/">Pokedéx</a></h1>
+            </article>
+    
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/cadastro">Cadastro</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Cadastrar Pokemon</h1>
+        </header>
+    
+        <!-- Estruturação do Formulário -->
+        <main>
+            <section id="cadastrar">
+                <form action="/subscription" method="POST">
+                    <div class="label-float">
+                        <label for="numero">Número: </label>
+                        <input type="text" name="numero" id="num-pokemon" placeholder="Digite o número" required>
+                    </div>
+                    <div class="label-float">
+                        <label for="nome">Nome: </label>
+                        <input type="text" name="nome" id="nome-pokemon" placeholder="Digite o nome" required>
+                    </div>
+                    <div class="label-float">
+                        <label for="tipo">Tipo: </label>
+                        <input type="text" name="tipo" id="tipo-pokemon" placeholder="Digite o tipo" required>
+                    </div>
+                    <div class="label-float">
+                        <label for="imagem">Imagem: </label>
+                        <input type="text" name="imagem" id="imagem-pokemon" placeholder="Digite a url da imagem" required>
+                    </div>
+                    <div class="label-float">
+                        <label for="descricao">Descrição: </label>
+                        <input type="text" name="descricao" id="desc-pokemon" placeholder="Digite a descrição" required>
+                    </div>
+                    <div class="label-float">
+                        <label for="altura">Altura: </label>
+                        <input type="text" name="altura" id="altura-pokemon" placeholder="Digite a altura" required>
+                    </div>
+                    <div class="label-float">
+                        <label for="peso">Peso: </label>
+                        <input type="text" name="peso" id="peso-pokemon" placeholder="Digite o peso" required>
+                    </div>
+                    <div class="label-float">
+                        <label for="categoria">Categoria: </label>
+                        <input type="text" name="categoria" id="cat-pokemon" placeholder="Digite a categoria" required>
+                    </div>
+                    <div class="label-float">
+                        <label for="habilidade">Habilidade: </label>
+                        <input type="text" name="habilidade" id="hab-pokemon" placeholder="Digite a habilidade" required>
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </section>
+        </main>
+    </body>
+    
+    <script src="/js/script.js"></script>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico" />
+    <title>Pokédex</title>
+  </head>
+
+  <body>
+    <nav>
+      <article>
+        <img src="/img/8303.png" alt="" />
+        <h1><a href="/">Pokedéx</a></h1>
+      </article>
+
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/cadastro">Cadastro</a></li>
+      </ul>
+    </nav>
+    <main>
+      <header>
+        <h1>Pokedéx</h1>
+      </header>
+      <div class="container">
+        <%pokedex.forEach((card, index)=> {%>
+        
+          <a class="card" href="/detalhes/<%=index%>">
+            <img src="<%=card.imagem%>" alt="imagens Pokémons">
+          
+          <h2><%=card.nome%></h2>
+          <h4><%=card.tipo%></h4>
+        </a>
+        <%})%>
+      </div>
+    </main>
+    <section id="pokedex"></section>
+
+    <script src="/js/script.js"></script>
+  </body>
+
+  
+</html>
